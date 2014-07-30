@@ -1,19 +1,32 @@
 === Plugin Name ===
 Contributors: GoldBroker
 Donate link: 
-Tags: gold, price, chart, live
+Tags: gold, price, chart, live, commodities, gold price, gold price live, gold widget, live gold price, spot
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: trunk
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Live Gold price chart widget
+Live Gold price chart - Updated every minute - Easy to install & to customize
 
 == Description ==
 
-This plugin allow you to display a real time gold price chart in 119 differents currencies.
-You can find the full list of available currencies here: https://www.goldbroker.com/en/charts/currencies.
+Live Gold Price chart widget allow you to display a real time gold price chart in any of your widget areas.
+The chart is automatically updated every minute from Monday to Friday.
+
+== Features ==
+ - Updated every minute
+ - Live price performance
+ - Choose between 119 currencies
+ - Customize width and height
+ - Easy to customize with CSS
+ - Works in all major browsers - I9+, Opera, Safari, Firefox, Chrome
+ 
+
+== Demo ==
+
+ - Click this link for a demo https://www.goldbroker.com/en/gold-spot-price-widget
 
 
 
@@ -24,41 +37,27 @@ This section describes how to install the plugin and get it working.
 1. Upload `gold-price-chart directory` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to the Appearance > Widgets
-4. To activate the widget drag it to a sideabr or click on it.
+4. To activate the widget drag it to a sidebar or click on it.
 
 == Frequently Asked Questions ==
 
-= Where can i find the list of available currencies =
+= What are the recommended settings =
 
-Please visit  https://www.goldbroker.com/en/charts/currencies.
+Recommended settings are 100% width & 320px height.
+
 
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.jpg. 
+1. An example of the live gold price chart widget. 
+2. The settings screen in wp-admin/widgets.php. 
 
 == Changelog ==
 
 
+==1.1==
+- added currency selector field
+- added customizable height & width
 
-== Arbitrary section ==
-
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-
-Unordered list:
-
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+== 1.0==
+- first release
