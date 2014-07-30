@@ -15,7 +15,7 @@ Live Gold price chart - Updated every minute - Easy to install & to customize
 Live Gold Price chart widget allow you to display a real time gold price chart in any of your widget areas.
 The chart is automatically updated every minute from Monday to Friday.
 
-== Features ==
+=Features=
  - Updated every minute
  - Live price performance
  - Choose between 119 currencies
@@ -24,7 +24,7 @@ The chart is automatically updated every minute from Monday to Friday.
  - Works in all major browsers - I9+, Opera, Safari, Firefox, Chrome
  
 
-== Demo ==
+=Demo=
 
  - Click this link for a demo https://www.goldbroker.com/en/gold-spot-price-widget
 
