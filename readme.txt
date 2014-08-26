@@ -4,7 +4,7 @@ Donate link:
 Tags: gold, price, chart, live, commodities, gold price, silver price, gold price live, gold widget, live gold price, spot
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
