@@ -1,21 +1,23 @@
 === Plugin Name ===
 Contributors: GoldBroker
 Donate link: 
-Tags: gold, price, chart, live, commodities, gold price, gold price live, gold widget, live gold price, spot
+Tags: gold, price, chart, live, commodities, gold price, silver price, gold price live, gold widget, live gold price, spot
 Requires at least: 3.0.1
 Tested up to: 3.9.1
 Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Live Gold price chart - Updated every minute - Easy to install & to customize
+Live Gold & Silver price chart - Updated every minute - Easy to install & to customize
 
 == Description ==
 
-Live Gold Price chart widget allow you to display a real time gold price chart in any of your widget areas.
-The chart is automatically updated every minute from Monday to Friday.
+Live Gold & Silver Price chart widget allow you to display a real time gold & silver price charts in any of your widget areas.
+The charts are automatically updated every minute from Monday to Friday.
 
 = Features =
+ - Live gold price chart
+ - Live silver price chart
  - Updated every minute
  - Live price performance
  - Choose between 119 currencies
@@ -41,7 +43,7 @@ This section describes how to install the plugin and get it working.
 = What are the recommended settings =
 
 Recommended settings are 100% width & 320px height.
-
+Height and Width can't be empty.
 
 
 == Screenshots ==
@@ -51,6 +53,8 @@ Recommended settings are 100% width & 320px height.
 
 == Changelog ==
 
+==1.2==
+- added silver price chart widget
 
 ==1.1==
 - added currency selector field
