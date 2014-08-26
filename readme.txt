@@ -12,7 +12,7 @@ Live Gold & Silver price chart - Updated every minute - Easy to install & to cus
 
 == Description ==
 
-Live Gold & Silver Price chart widget allow you to display a real time gold & silver price charts in any of your widget areas.
+Live Gold & Silver Price chart widget allow you to display real time gold & silver price charts in any of your widget areas.
 The charts are automatically updated every minute from Monday to Friday.
 
 = Features =
