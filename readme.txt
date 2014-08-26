@@ -53,12 +53,15 @@ Height and Width can't be empty.
 
 == Changelog ==
 
-==1.2==
+= 1.2 =
+
 - added silver price chart widget
 
-==1.1==
+= 1.1 =
+
 - added currency selector field
 - added customizable height & width
 
-== 1.0==
+= 1.0 =
+
 - first release
