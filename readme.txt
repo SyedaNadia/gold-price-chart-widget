@@ -4,7 +4,7 @@ Donate link:
 Tags: gold, price, chart, live, commodities, gold price, silver price, gold price live, gold widget, plugin, widget
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,11 +21,13 @@ The charts are automatically updated every minute from Monday to Friday.
  - Updated every minute
  - Live price performance
  - Choose between 119 currencies
+ - translated in 5 languages, English, Spanish, French, German and Italian 
  - Customize width and height
  - Easy to customize with CSS
  - Works in all major browsers - I9+, Opera, Safari, Firefox, Chrome
+
 = Demo =
- - Click this link for a demo https://www.goldbroker.com/en/gold-spot-price-widget
+ - Click this link for a demo https://www.goldbroker.com/gold-spot-price-widget
 
 
 
@@ -52,6 +54,11 @@ Height and Width can't be empty.
 2. The settings screen in wp-admin/widgets.php. 
 
 == Changelog ==
+
+= 1.3 =
+
+- added localization
+- widgets available in English, Spanish, French, German, Italian
 
 = 1.2 =
 

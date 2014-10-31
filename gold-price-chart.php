@@ -1,14 +1,23 @@
 <?php
 /*
-*Plugin Name: Live Gold & Silver price chart widget
-*Plugin URI: https://www.goldbroker.com/en/gold-spot-price-widget
+*Plugin Name: Live Gold Price & Silver Price Charts Widgets
+*Plugin URI: https://www.goldbroker.com/gold-spot-price-widget
 *Description: Live gold and silver price chart widgets. Once activated go to Widgets and drag the Gold Price Chart in the widget area.
-*Version: 1.2
-*Author: GoldBroker
-*Author URI:http://www.goldbroker.com
+*Version: 1.3
+*Author: GoldBroker.com
+*Author URI:https://www.goldbroker.com
 */
 
 add_action('widgets_init','gold_price_chart_init');
+
+function ap_action_init()
+{
+/* Localization */
+    load_plugin_textdomain('gold-price-widget', false, dirname(plugin_basename(__FILE__)) . '/languages');
+}
+
+/* Add actions */
+add_action('init', 'ap_action_init');
 
 function gold_price_chart_init(){
          register_widget('gold_price_chart_widget');
@@ -22,14 +31,14 @@ class gold_price_chart_widget extends WP_widget{
 		        "classname" => "gold-price-chart",
 				"description" => "Live Gold price chart widget"
 				);
-	       $this->WP_widget("widget-gold-price", "Gold Price Chart");
+	       $this->WP_widget("gold-price-widget", "Gold Price Chart", $options );
 	  }
 	  function widget($args,$instance){
 	        extract($args);
 			echo $before_widget;
 			echo $before_title.$instance["title"].$after_title;
 			?>
-			<iframe src="https://banners.goldbroker.com/en/widget/iframe/live/XAU/<?php echo $instance["height"]; ?>?currency=<?php echo $instance["currency"]; ?>" width="<?php echo $instance["width"]; ?>" height="<?php echo $instance["height"]; ?>" style="border: 0; overflow:hidden;"></iframe><br />Gold Price by <a href="https://www.goldbroker.com">GoldBroker.com</a>
+			<iframe src="<?php echo __('https://www.goldbroker.com', 'gold-price-widget'); ?>/widget/iframe/live/XAU/<?php echo $instance["height"]; ?>?currency=<?php echo $instance["currency"]; ?>" width="<?php echo $instance["width"]; ?>" height="<?php echo $instance["height"]; ?>" style="border: 0; overflow:hidden;"></iframe><br /><?php echo __('Gold Price by', 'gold-price-widget'); ?> <a href="<?php echo __('https://www.goldbroker.com', 'gold-price-widget'); ?>"><?php echo __('Goldbroker.com', 'gold-price-widget'); ?></a>
 			<?php
 			echo $after_widget;
 	  }
@@ -38,7 +47,7 @@ class gold_price_chart_widget extends WP_widget{
 	  }
 	  function form($instance){
 
-		   $instance = wp_parse_args( (array) $instance, array( 'title' => 'Gold Price', 'currency' => 'USD', 'height' => '320', 'width' => '100%' ) );
+		   $instance = wp_parse_args( (array) $instance, array( 'title' => __( "Gold Price", "gold-price-widget"), 'currency' => 'USD', 'height' => '320', 'width' => '100%' ) );
            $title = $instance['title'];
            $currency = $instance['currency'];   
 		   $height = $instance['height']; 
@@ -46,12 +55,12 @@ class gold_price_chart_widget extends WP_widget{
 
 	 ?>
 	   <p>
-	      <label for="<?php echo $this->get_field_id('title'); ?>">Title : </label>
+	      <label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Title', 'gold-price-widget'); ?>: </label>
 		  <input value="<?php echo $instance["title"]; ?>" name="<?php echo $this->get_field_name('title'); ?>" name="<?php echo $this->get_field_id('title'); ?>" type="text"/>
 		</p>  
 		
 		<p>
-		 <label for="<?php echo $this->get_field_id('currency'); ?>">Select Currency: 
+		 <label for="<?php echo $this->get_field_id('currency'); ?>"><?php echo __('Select currency', 'gold-price-widget'); ?>:
         <select  id="<?php echo $this->get_field_id('currency'); ?>" name="<?php echo $this->get_field_name('currency'); ?>" type="text">
           
 <option value='USD '<?php echo ($currency=='USD ')?'selected':''; ?>>USD </option>
@@ -177,12 +186,12 @@ class gold_price_chart_widget extends WP_widget{
 	  </p>
 	  
 	  <p>
-	      <label for="<?php echo $this->get_field_id('height'); ?>">Height : </label>
+	      <label for="<?php echo $this->get_field_id('height'); ?>"><?php echo __('Height', 'gold-price-widget'); ?>: </label>
 		  <input value="<?php echo $instance["height"]; ?>" name="<?php echo $this->get_field_name('height'); ?>" name="<?php echo $this->get_field_id('height'); ?>" type="text"/>
 		</p>  
 		
 		<p>
-	      <label for="<?php echo $this->get_field_id('width'); ?>">Width : </label>
+	      <label for="<?php echo $this->get_field_id('width'); ?>"><?php echo __('Width', 'gold-price-widget'); ?>: </label>
 		  <input value="<?php echo $instance["width"]; ?>" name="<?php echo $this->get_field_name('width'); ?>" name="<?php echo $this->get_field_id('width'); ?>" type="text"/>
 		</p> 
 		
@@ -216,7 +225,7 @@ class silver_price_chart_widget extends WP_widget{
 			echo $before_widget;
 			echo $before_title.$instance["title"].$after_title;
 			?>
-			<iframe src="https://banners.goldbroker.com/en/widget/iframe/live/XAG/<?php echo $instance["height"]; ?>?currency=<?php echo $instance["currency"]; ?>" width="<?php echo $instance["width"]; ?>" height="<?php echo $instance["height"]; ?>" style="border: 0; overflow:hidden;"></iframe><br />Silver Price by <a href="https://www.goldbroker.com">GoldBroker.com</a>
+			<iframe src="<?php echo __('https://www.goldbroker.com', 'gold-price-widget'); ?>/widget/iframe/live/XAG/<?php echo $instance["height"]; ?>?currency=<?php echo $instance["currency"]; ?>" width="<?php echo $instance["width"]; ?>" height="<?php echo $instance["height"]; ?>" style="border: 0; overflow:hidden;"></iframe><br /><?php echo __('Silver Price by', 'gold-price-widget'); ?> <a href="<?php echo __('https://www.goldbroker.com', 'gold-price-widget'); ?>"><?php echo __('Goldbroker.com', 'gold-price-widget'); ?></a>
 			<?php
 			echo $after_widget;
 	  }
@@ -225,7 +234,7 @@ class silver_price_chart_widget extends WP_widget{
 	  }
 	  function form($instance){
 
-		   $instance = wp_parse_args( (array) $instance, array( 'title' => 'Silver Price', 'currency' => 'USD', 'height' => '320', 'width' => '100%' ) );
+		   $instance = wp_parse_args( (array) $instance, array( 'title' => __( "Silver Price", "gold-price-widget"), 'currency' => 'USD', 'height' => '320', 'width' => '100%' ) );
            $title = $instance['title'];
            $currency = $instance['currency'];   
 		   $height = $instance['height']; 
@@ -233,12 +242,12 @@ class silver_price_chart_widget extends WP_widget{
 
 	 ?>
 	   <p>
-	      <label for="<?php echo $this->get_field_id('title'); ?>">Title : </label>
+	      <label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Title', 'gold-price-widget'); ?>: </label>
 		  <input value="<?php echo $instance["title"]; ?>" name="<?php echo $this->get_field_name('title'); ?>" name="<?php echo $this->get_field_id('title'); ?>" type="text"/>
 		</p>  
 		
 		<p>
-		 <label for="<?php echo $this->get_field_id('currency'); ?>">Select Currency: 
+		 <label for="<?php echo $this->get_field_id('currency'); ?>"><?php echo __('Select currency', 'gold-price-widget'); ?>:
         <select  id="<?php echo $this->get_field_id('currency'); ?>" name="<?php echo $this->get_field_name('currency'); ?>" type="text">
           
 <option value='USD '<?php echo ($currency=='USD ')?'selected':''; ?>>USD </option>
@@ -364,12 +373,12 @@ class silver_price_chart_widget extends WP_widget{
 	  </p>
 	  
 	  <p>
-	      <label for="<?php echo $this->get_field_id('height'); ?>">Height : </label>
+	      <label for="<?php echo $this->get_field_id('height'); ?>"><?php echo __('Height', 'gold-price-widget'); ?>: </label>
 		  <input value="<?php echo $instance["height"]; ?>" name="<?php echo $this->get_field_name('height'); ?>" name="<?php echo $this->get_field_id('height'); ?>" type="text"/>
 		</p>  
 		
 		<p>
-	      <label for="<?php echo $this->get_field_id('width'); ?>">Width : </label>
+	      <label for="<?php echo $this->get_field_id('width'); ?>"><?php echo __('Width', 'gold-price-widget'); ?>:   </label>
 		  <input value="<?php echo $instance["width"]; ?>" name="<?php echo $this->get_field_name('width'); ?>" name="<?php echo $this->get_field_id('width'); ?>" type="text"/>
 		</p> 
 		
