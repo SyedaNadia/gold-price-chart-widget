@@ -3,7 +3,7 @@
 *Plugin Name: Live Gold Price & Silver Price Charts Widgets
 *Plugin URI: https://www.goldbroker.com/gold-spot-price-widget
 *Description: Live gold and silver price chart widgets. Once activated go to Widgets and drag the Gold Price Chart in the widget area.
-*Version: 1.3
+*Version: 1.4
 *Author: GoldBroker.com
 *Author URI:https://www.goldbroker.com
 */
