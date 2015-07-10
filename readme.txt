@@ -3,8 +3,8 @@ Contributors: GoldBroker
 Donate link: 
 Tags: gold, price, chart, live, commodities, gold price, silver price, gold price live, gold widget, plugin, widget
 Requires at least: 3.0.1
-Tested up to: 3.9.1
-Stable tag: 1.4
+Tested up to: 4.0.1
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,14 +12,17 @@ Live Gold & Silver price chart - Updated every minute - Easy to install & to cus
 
 == Description ==
 
-Live Gold & Silver Price chart widget allow you to display real time gold & silver price charts in any of your widget areas.
-The charts are automatically updated every minute from Monday to Friday.
+4 Live Gold & Silver Price widgets. This plugin allow you to display real time gold & silver price charts in any of your widget areas.
+The widgets are automatically updated every minute from Monday to Friday and are availables in 119 currencies.
 
 = Features =
- - Live gold price chart
- - Live silver price chart
+ - Live Gold Price
+ - Live Gold Price Chart
+ - Gold Price's Daily performance
+ - Live Silver Price
+ - Live Silver Price Chart
+ - Silver Price's Daily performance
  - Updated every minute
- - Live price performance
  - Choose between 119 currencies
  - translated in 5 languages, English, Spanish, French, German and Italian 
  - Customize width and height
@@ -27,7 +30,8 @@ The charts are automatically updated every minute from Monday to Friday.
  - Works in all major browsers - I9+, Opera, Safari, Firefox, Chrome
 
 = Demo =
- - Click this link for a demo https://www.goldbroker.com/gold-spot-price-widget
+ - Click this link for Gold Price widgets demo https://www.goldbroker.com/gold-spot-price-widget
+ - Click this link for Silver price widgets demo https://www.goldbroker.com/silver-spot-price-widget
 
 
 
@@ -44,16 +48,23 @@ This section describes how to install the plugin and get it working.
 
 = What are the recommended settings =
 
-Recommended settings are 100% width & 320px height.
+For the charts widgets recommended settings are 100% width & 320px height.
 Height and Width can't be empty.
 
 
 == Screenshots ==
 
 1. An example of the live gold price chart widget. 
-2. The settings screen in wp-admin/widgets.php. 
+2. The settings screen in wp-admin/widgets.php.
+3. The gold price widget
+4. The silver price widget
 
 == Changelog ==
+
+= 1.5 =
+
+- added new silver price widget
+- add new gold price widget
 
 = 1.3 =
 
