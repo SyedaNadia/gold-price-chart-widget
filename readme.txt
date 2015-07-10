@@ -56,8 +56,8 @@ Height and Width can't be empty.
 
 1. An example of the live gold price chart widget. 
 2. The settings screen in wp-admin/widgets.php.
-3. The gold price widget
-4. The silver price widget
+3. An example of the  gold price widget
+4. An example of the silver price widget
 
 == Changelog ==
 
